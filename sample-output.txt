@@ -1,0 +1,23 @@
+Running security audit...
+
+[+] Checking SSH root login settings:
+#PermitRootLogin prohibit-password
+# the setting of "PermitRootLogin prohibit-password".
+
+[+] Listing users with sudo access:
+sudo:x:27:kali,zach
+
+[+] Open ports:
+Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port
+
+[+] World-writable files (excluding /proc and /sys):
+  1574650   5524 -rwxrwxrwx   1 zach     zach      5654256 Mar 16 06:05 /home/zach/Desktop/main
+  1580272   1108 -rw-rw-rw-   1 zach     zach      1132530 Mar 16 06:50 /home/zach/Desktop/img3.png
+  1580611     20 -rwxrwxrwx   1 zach     zach        16496 Mar 16 07:11 /home/zach/Desktop/shuffle
+  1580270   2228 -rw-rw-rw-   1 zach     zach      2280486 Mar 16 06:50 /home/zach/Desktop/img1.png
+  1580271    784 -rw-rw-rw-   1 zach     zach       800345 Mar 16 06:50 /home/zach/Desktop/a$(whoami)z.jpg
+
+[+] UFW firewall status:
+Status: inactive
+
+Audit complete.
